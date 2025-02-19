@@ -1,0 +1,27 @@
+ question 1: what is sql?
+
+answer: SQL (Structured Query Language) is a language used to manage and interact with databases. It helps store, retrieve, update, and delete data in a structured way.
+
+For example, if you have a list of students with their names and grades in a database, you can use SQL to:
+
+Get information → "Show all students who scored above 80."
+Add new data → "Insert a new student into the list."
+Update data → "Change a student's grade."
+Delete data → "Remove a student from the list."
+
+question 2: difference between sql and mysql?
+
+answer:SQL is a language used to manage and interact with databases, while MySQL is a database management system (DBMS) that uses SQL to store, retrieve, and manage data.
+
+SQL is a language, and MySQL is software that implements SQL to manage databases
+
+question 3: mysql vs nosql
+
+ answer :MySQL → Stores data in tables like an Excel sheet (rows & columns). It follows strict rules and is good for structured data like bank records.
+
+ NoSQL → Stores data in a more flexible way, like JSON files or key-value pairs. It’s good for large, fast-changing data like social media posts.
+
+ MySQL = Organized & structured 
+ NoSQL = Flexible & fast-changing 
+
+ 

@@ -21,27 +21,27 @@ Tables store data in a structured format with rows representing records and colu
 
 Keys help in identifying and organizing records in a database:
 
-# Primary Key: 
+1.Primary Key: 
 
 A unique identifier for each record in a table (e.g., Student_ID in a Student table). Only one per table.
 
-# Foreign Key: 
+2. Foreign Key: 
 
 A field in one table that refers to the Primary Key of another table, establishing relationships (e.g., Course_ID in the Enrollment table referencing Course_ID in the Courses table).
 
-# Candidate Key: 
+3. Candidate Key: 
 
 A set of columns that can uniquely identify records. One of them becomes the Primary Key (e.g., Email and Student_ID in a Student table).
 
-# Composite Key: 
+4. Composite Key: 
 
 A key made up of two or more columns that together ensure uniqueness (e.g., (Student_ID, Course_ID) in an Enrollment table).
 
-# Super Key:
+5. Super Key:
 
 A set of columns that uniquely identify a record but may have extra unnecessary attributes (e.g., (Student_ID, Email, Phone)).
 
-# Alternate Key:
+6. Alternate Key:
 
  A Candidate Key that is not chosen as the Primary Key (e.g., If Student_ID is the Primary Key, Email is an Alternate Key).
 

@@ -2,11 +2,22 @@
 
 # SQL 
 
-# 1. Introduction
+#  Introduction
 
 SQL (Structured Query Language) is a powerful tool used to store, retrieve, and manage data in relational databases. It is widely utilized in Data Science and Software Development to work with structured data, perform calculations, and organize information efficiently. Learning SQL helps in handling large datasets, optimizing performance, and making better data-driven decisions.
 
-# 2. Database Keys
+# What is a database, and how does it differ from a relational database?
+
+A database is a collection of organized data. A relational database stores data in tables with rows and columns and connects them using relationships.
+
+# Purpose of SQL in managing databases:
+SQL is a language used to work with databases. It helps in storing, retrieving, updating, and deleting data easily. It allows users to organize and manage information efficiently.
+
+# What are tables, rows, and columns in a relational database?
+
+Tables store data in a structured format with rows representing records and columns representing attributes of the data.
+
+#  Database Keys
 
 Keys help in identifying and organizing records in a database:
 
@@ -35,7 +46,7 @@ A set of columns that uniquely identify a record but may have extra unnecessary 
  A Candidate Key that is not chosen as the Primary Key (e.g., If Student_ID is the Primary Key, Email is an Alternate Key).
 
 
-# 3. Types of SQL Commands
+#  Types of SQL Commands
 
 SQL is divided into different types based on functionality:
 
@@ -49,15 +60,15 @@ SQL is divided into different types based on functionality:
 
 5.DQL (Data Query Language) – Fetches data from tables (e.g., SELECT).
 
-# 4. GROUP BY Clause
+#  GROUP BY Clause
 
 The GROUP BY clause groups rows with the same values and applies functions like COUNT, SUM, or AVG to summarize data.
 
-# 5. CASE Statement
+#  CASE Statement
 
 The CASE statement allows conditional logic in SQL queries, helping in decision-making based on specific values.
 
-# 6. SQL Joins
+#  SQL Joins
 
 Joins combine data from multiple tables based on common fields:
 
@@ -71,19 +82,19 @@ Joins combine data from multiple tables based on common fields:
 
 5.CROSS JOIN – Matches every row from one table with all rows from another.
 
-# 7. Subquery
+#  Subquery
 
 A subquery is a query inside another query, used to fetch data required for the main query.
 
-# 8. Indexing
+#  Indexing
 
 An index improves query speed by allowing the database to locate records faster.
 
-# 9. Views
+#  Views
 
 A view is a saved SQL query that acts as a virtual table, simplifying data access and security.
 
-# 10. ACID Properties
+#  ACID Properties
 
 ACID ensures reliable database transactions:
 
@@ -95,7 +106,7 @@ ACID ensures reliable database transactions:
 
 4.Durability – Completed transactions are permanently stored.
 
-# 11. Normalization
+#  Normalization
 
 Normalization eliminates redundancy and ensures efficient data storage.
 
@@ -109,11 +120,11 @@ Normalization eliminates redundancy and ensures efficient data storage.
 
 5.4NF (Fourth Normal Form) – Remove multivalued dependencies.
 
-# 12. Triggers
+#  Triggers
 
 A trigger is an automatic action executed when specific changes occur in the database, helping maintain consistency.
 
-# 13. Constraints
+#  Constraints
 
 A constraint is a rule that ensures data integrity and reliability:
 
@@ -129,27 +140,27 @@ A constraint is a rule that ensures data integrity and reliability:
 
 6.DEFAULT – Assigns a default value if none is provided.
 
-# 14. Alias
+#  Alias
 
 An alias is a temporary name assigned to a table or column for the duration of a query, improving readability.
 
-# 15. Difference Between DROP vs DELETE
+#  Difference Between DROP vs DELETE
 
 DROP: A DDL command that completely removes a table or database, including its structure.
 
 DELETE: A DML command that removes specific rows from a table based on a condition.
 
-# 16. Difference Between BETWEEN and IN Operators
+#  Difference Between BETWEEN and IN Operators
 
 BETWEEN: Used to filter values within a range (inclusive).
 
 IN: Used to filter specific values from a given list.
 
-# 17. AUTO_INCREMENT
+#  AUTO_INCREMENT
 
 AUTO_INCREMENT automatically generates unique numbers for a column, commonly used for Primary Keys.
 
-# 18. UNION, MINUS, and INTERSECT Operators
+#  UNION, MINUS, and INTERSECT Operators
 
 1.UNION: Combines results from two queries and removes duplicates.
 
@@ -157,11 +168,11 @@ AUTO_INCREMENT automatically generates unique numbers for a column, commonly use
 
 3.INTERSECT: Returns rows that are common to both queries.
 
-# 19. Functions in SQL
+#  Functions in SQL
 
 Functions perform specific tasks and return results efficiently.
 
-# 20. Difference Between UNION and UNION ALL
+#  Difference Between UNION and UNION ALL
 
 UNION: Combines results of multiple SELECT queries and removes duplicate rows.
 

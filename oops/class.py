@@ -1,15 +1,28 @@
-class Atm:
-    """Constructor: The code inside the constructor runs automatically when an object is created."""
+# nothing is truely private in python
 
-    # Method: A function inside a class is called a method.
-    
+
+class Atm:
+    """ATM class with private attributes and proper encapsulation."""
+
     def __init__(self):
-        self.pin = ""
-        self.balance = 0
+        self.__pin = ""  # Private attribute
+        self.__balance = 0  # Private attribute
         print(id(self))
         self.menu()
-       
 
+      
+    def get_pin(self):
+        return self.__pin
+    
+
+    
+    def set_pin(self, new_pin):
+        if len(new_pin) == 4 and new_pin.isdigit():
+            self.__pin = new_pin
+            print("PIN was changed successfully!")
+        else:
+            print("Invalid PIN! Please enter a 4-digit numeric PIN.")
+        
     def menu(self):
         while True:
             user_input = input("""
@@ -36,33 +49,56 @@ class Atm:
                 print("Invalid input. Please try again.")
 
     def create_pin(self):
-        self.pin = input("Enter a new PIN: ")
+        self.__pin = input("Enter a new PIN: ")
         print("PIN created successfully!")
 
     def deposit(self):
-        temp = input("enter you pin")
-        if temp == self.pin:
+        temp = input("Enter your PIN: ")
+        if temp == self.__pin:
             amount = float(input("Enter amount to deposit: "))
-            self.balance += amount
-            print(f"₹{amount} deposited successfully! New balance: ₹{self.balance}")
+            self.__balance += amount
+            print(f"₹{amount} deposited successfully! New balance: ₹{self.__balance}")
+        else:
+            print("Incorrect PIN!")
 
     def withdraw(self):
-        temp = input("enter you pin")
-        if temp == self.pin:
+        temp = input("Enter your PIN: ")
+        if temp == self.__pin:
             amount = float(input("Enter amount to withdraw: "))
-            print(amount)
-            if amount > self.balance:
-              print("Insufficient balance!")
+            if amount > self.__balance:
+                print("Insufficient balance!")
             else:
-               self.balance -= amount
-               print(f"₹{amount} withdrawn successfully! Remaining balance: ₹{self.balance}")
+                self.__balance -= amount
+                print(f"₹{amount} withdrawn successfully! Remaining balance: ₹{self.__balance}")
+        else:
+            print("Incorrect PIN!")
 
     def check_balance(self):
-        print(f"Your current balance is: ₹{self.balance}")
+        print(f"Your current balance is: ₹{self.__balance}")  # Fixed access
+
+    # Getter for private balance
+    def get_balance(self):
+        return self.__balance
+
+    # Setter to update private balance (if needed)
+    def set_balance(self, new_balance):
+        if new_balance >= 0:
+            self.__balance = new_balance
+        else:
+            print("Balance cannot be negative!")
 
 
-
+# Creating an ATM instance
 sbi = Atm()
 print(id(sbi))
+
+
+# sbi.__balance = "xyz"  # This won't actually modify the private attribute
+
+# sbi.set_pin("4567")
+
+sbi.get_pin()
+
+
 
 
